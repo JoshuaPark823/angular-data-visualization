@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { DataService } from './services/data-service.service';
-import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -9,14 +8,14 @@ import { HttpClient } from "@angular/common/http";
 })
 export class AppComponent {
 
+  public data = [];
+
   constructor(
     private _dataService: DataService,
-    private _http: HttpClient
   ){}
 
   ngOnInit() {
-    this._http.get("assets/livingcost2020.json").subscribe(data => {
-      console.log(data);
-    })
+    // testing the service get method
+    this._dataService.getData().subscribe(data => console.log(data));
   }
 }
