@@ -8,8 +8,6 @@ import { DataService } from './services/data-service.service';
 })
 export class AppComponent {
 
-  public data = [];
-
   constructor(
     private _dataService: DataService,
   ){}

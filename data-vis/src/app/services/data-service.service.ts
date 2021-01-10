@@ -8,6 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class DataService {
 
+  public dataArray: IData[] = [];
+
   constructor(private _http: HttpClient) { }
 
   // get data json file
