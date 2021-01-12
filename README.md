@@ -12,7 +12,7 @@
 
 ### Figma Mockup & Prototype
 
-![Alt text](/repo-assets/2020-01-12.png)
+![Alt text](/repo-assets/2021-01-12.png)
 
 ### Technologies Used
 - TypeScript, Angular
