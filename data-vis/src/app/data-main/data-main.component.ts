@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataMainComponent implements OnInit {
 
+  public count: number = 0;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

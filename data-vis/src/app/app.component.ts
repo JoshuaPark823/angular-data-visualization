@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IData } from './data-type';
 import { DataService } from './services/data-service.service';
 
 @Component({
@@ -8,12 +9,11 @@ import { DataService } from './services/data-service.service';
 })
 export class AppComponent {
 
-  constructor(
-    private _dataService: DataService,
-  ){}
+  public data_set: IData[] = [];
 
-  ngOnInit() {
-    // testing the service get method
-    this._dataService.getData().subscribe(data => console.log(data));
+  constructor(private _dataService: DataService){}
+
+  async ngOnInit() {
+
   }
 }
